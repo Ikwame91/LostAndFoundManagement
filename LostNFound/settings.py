@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9d)63pguq85_ru)p78z^q_8d5k(@v0l5a^fd-&$u-#r%&1rl5!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
+
 
 
 # Application definition
@@ -130,4 +131,4 @@ SESSION_COOKIE_AGE = 900 # 3 minutes. "1209600(2 weeks)" by default
 SESSION_SAVE_EVERY_REQUEST = True # "False" by default
 
 MEDIA_URL = '/lost_images/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
